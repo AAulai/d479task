@@ -1,0 +1,67 @@
+/* CSS */
+
+main {
+    width: 100%;
+    text-align: center;
+}
+main form {
+    margin: 20px auto;
+}
+
+section {
+    width: 66.6%;
+    height: 100%;
+    float: left;
+}
+
+aside {
+    float: right;
+    margin-right: 50px;
+}
+
+img {
+    display: block;
+    margin: auto;
+    height: 500px;
+}
+
+h1, h2, h3 {
+    font-family: Oswald, sans-serif;
+    font-size: 34pt;
+    text-align: center;
+}
+
+p {
+    font-size: 14pt;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    margin: 20px;
+    text-align: center;
+    color: blue;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.navbar {
+    background-color: lightgray;
+}
+
+.cite {
+    font-size: 9pt;
+}
+
+.active {
+    position: relative;
+    bottom: 40px;
+    color: red;
+}

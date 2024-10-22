@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Webform</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+<img src="img/ut_state_flag.jpg" alt="Utah state flag">
+<h1>WebForm</h1>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <p><a href="saltlakecity.html">Salt Lake City</a></p>
+    <p><a href="parkcity.html">Park City</a></p>
+    <p><a href="stgeorge.html">St. George</a></p>
+    <p><a class="active" href="index.html">Homepage</a></p>
+</nav>
+<main>
+    <!-- Contact web form -->
+    <form method="post" id="userForm" action="https://formtester.goodbytes.be/post.php">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName"><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="confirmEmail">Confirm Email:</label>
+        <input type="email" id="confirmEmail" name="confirmEmail"><br>
+
+        <label for="userQuestion">Enter your question here:</label>
+        <textarea id="userQuestion" name="userQuestion">Ask a question</textarea><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- footer with wiki link and citing source -->
+    <footer>
+        <p>For more information on this great state, check out the Wiki page:
+            <a href="https://en.wikipedia.org/wiki/Utah" target="_blank">Utah</a></p>
+        <p class="cite">Wikipedia contributors. "Utah." Wikipedia, The Free Encyclopedia, 28 Sept. 2023, https://en.wikipedia.org/wiki/Utah. Accessed 3 Oct. 2024.</p>
+    </footer>
+
+    <!-- script for email check -->
+    <script>
+        document.getElementById("userForm").addEventListener("submit", function(event) {
+            let email = document.getElementById("email").value;
+            let confirmEmail = document.getElementById("confirmEmail").value;
+
+            if (email !== confirmEmail) {
+                alert("Email address fields do not match");
+                event.preventDefault(); // Prevent form submit
+            }
+        });
+    </script>
+</main>
+</body>
+</html>

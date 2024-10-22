@@ -1,0 +1,17 @@
+/* CSS */
+* {margin: 0; padding: 0;}
+
+
+.header-img {
+    display: block;
+    height: 450px;
+    width: 100%;
+}
+
+h1, h2 {
+    padding: 20px;
+}
+main {
+    padding-left: 100px;
+    padding-right: 100px;
+}
